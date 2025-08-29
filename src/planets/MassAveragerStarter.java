@@ -3,7 +3,13 @@ public class MassAveragerStarter {
 
     // Complete this. Retrieve the array of planets, then compute average mass.
     public float getMeanPlanetaryMass() {
-        return 0.0f;
+        Planet planets[] = Planet.getAll();
+        int length = planets.length;
+        float sum =0f;
+        for(Planet planet: planets){
+            sum+=planet.getMass();
+        }
+        return sum/length;
     }
 
     //
@@ -19,6 +25,7 @@ public class MassAveragerStarter {
     // your code is correct
     public static void main(String[] args) {
         MassAveragerStarter averager = new MassAveragerStarter();
+        System.out.println(averager.getMeanPlanetaryMass());
     }
 
 }
