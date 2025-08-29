@@ -30,7 +30,11 @@ public class Planet {
     }
 
     public static float getLargest(Planet[] planets) {
-        return 0.0f;
+        float max =0f;
+        for(Planet planet: planets){
+            max=Math.max(max, planet.getMass());
+        }
+        return max;
     }
 
     public void setName(String name){
@@ -54,6 +58,7 @@ public class Planet {
         System.out.println(mercury.getName());
         System.out.println(mercury.getMass());
         System.out.println(mercury);
+        System.out.println(getLargest(getAll()));
     }
 
 }
