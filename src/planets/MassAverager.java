@@ -1,5 +1,5 @@
 package planets;
-public class MassAveragerStarter {
+public class MassAverager {
 
     // Complete this. Retrieve the array of planets, then compute average mass.
     public float getMeanPlanetaryMass() {
@@ -24,7 +24,7 @@ public class MassAveragerStarter {
     // test cases. Later in the semester, we will learn even more ways to guarantee
     // your code is correct
     public static void main(String[] args) {
-        MassAveragerStarter averager = new MassAveragerStarter();
+        MassAverager averager = new MassAverager();
         System.out.println(averager.getMeanPlanetaryMass());
     }
 
